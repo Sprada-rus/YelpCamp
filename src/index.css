@@ -6,6 +6,7 @@
   --primary-color-text: rgb(144, 141, 136);
   --btn-background-color: rgb(23, 22, 22);
   --btn-background-color-hover: rgb(107, 107, 107);
+  --btn-disabled-background-color: rgba(23, 22, 22, .7);
   --bg-check-mark: rgb(25, 163, 140);
   --border-color: rgb(220, 220, 220);
   font-family: Roboto, sans-serif;
@@ -46,6 +47,11 @@ img {
   color: var(--main-color);
 }
 
+.primary-btn:disabled {
+  background-color: var(--btn-disabled-background-color);
+  cursor: default;
+}
+
 .container {
   padding: 1.5em 1em;
 }
@@ -61,6 +67,11 @@ footer .container {
 .header__logo,
 .footer__logo {
   flex: 0 0 8em;
+  cursor: pointer;
+}
+
+.header__back-action {
+  font-size: 1em;
   cursor: pointer;
 }
 
@@ -132,12 +143,12 @@ footer .container {
   display: flex;
   flex-flow: column;
   overflow: hidden;
-  margin: .5em;
   transition: height .3s linear;
 }
 
 .header__actions.open{
   height: 7em;
+  margin-top: .5em;
 }
 
 .header__actions > button + button {
