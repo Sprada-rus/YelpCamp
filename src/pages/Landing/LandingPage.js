@@ -7,11 +7,11 @@ export default function LandingPage() {
 
     return <>
         <Header>
-            <Logo onClick={() => navigate('/')}/>
+            <Logo onClick={() => navigate('/')} className="header__logo"/>
         </Header>
-        <section>
+        <div>
             <LandingImage />
-            <div className="container">
+            <section className="container">
                 <h1>Explore the best camp on Earth.</h1>
                 <p>YelpCamp is a curated list of the best camping spots on Earth. Unfiltered and unbiased reviews.</p>
                 <ul className="landing-list">
@@ -20,17 +20,15 @@ export default function LandingPage() {
                     <li>See locations for all camps.</li>
                 </ul>
                 <button className="primary-btn" onClick={() => navigate('/list')}>View Campgrounds</button>
-            </div>
-        </section>
-        <section>
-            <div className="container">
+            </section>
+            <section className="container">
                 <p>Partnered with:</p>
                 <div className="partners-logo">
                     <AirbnbLogo/>
                     <BookingLogo/>
                     <PlumeGuideLogo/>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </>
 }

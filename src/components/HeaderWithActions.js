@@ -4,7 +4,7 @@ import HeaderActions from "./HeaderActions";
 
 export default function HeaderWithActions() {
     return <Header>
-        <Logo />
+        <Logo className="header__logo"/>
         <HeaderActions/>
     </Header>
 }

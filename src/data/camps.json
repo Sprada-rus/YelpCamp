@@ -1,0 +1,44 @@
+[
+  {
+    "camp_id": 1,
+    "camp_name": "Mount Ulap",
+    "camp_descr": "One of the most famous hikes in Benguet is Mt Ulap in Itogon.",
+    "camp_light_image": "Mount-Ulap.jpg",
+    "capm_high_image": "Mount-Ulap.jpg"
+  },
+  {
+    "camp_id": 2,
+    "camp_name": "Calaguas Islands",
+    "camp_descr": "A paradise if islands that can rival the white sand beauty if Boracay.",
+    "camp_light_image": "Calaguas-Island.jpg",
+    "capm_high_image": "Calagus-Islands.jpg"
+  },
+  {
+    "camp_id": 3,
+    "camp_name": "Onay Beach",
+    "camp_descr": "This is one of the best beach camping sites, beautiful and pristine.",
+    "camp_light_image": "Onay-Beach.jpg",
+    "capm_high_image": "Onay-Beach.jpg"
+  },
+  {
+    "camp_id": 4,
+    "camp_name": "Seven Sisters Waterfall",
+    "camp_descr": "The Seven Sisters is the 39<sup>th</sup> tallest waterfall in Norway.",
+    "camp_light_image": "Seven-Sisters-Waterfall.jpg",
+    "capm_high_image": "Seven-Sisters-Waterfall.jpg"
+  },
+  {
+    "camp_id": 5,
+    "camp_name": "Latik Riverside",
+    "camp_descr": "Philippines is one of the most dazzling countries in all of Asia.",
+    "camp_light_image": "Latik-Riverside.jpg",
+    "capm_high_image": "Latik-Riverside.jpg"
+  },
+  {
+    "camp_id": 6,
+    "camp_name": "Buloy Springs",
+    "camp_descr": "This is one of the best beach camping sites. beautiful and pristine.",
+    "camp_light_image": "Buloy-Springs.jpg",
+    "capm_high_image": "Buloy-Springs.jpg"
+  }
+]

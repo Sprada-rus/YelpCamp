@@ -7,6 +7,7 @@
   --btn-background-color: rgb(23, 22, 22);
   --btn-background-color-hover: rgb(107, 107, 107);
   --bg-check-mark: rgb(25, 163, 140);
+  --border-color: rgb(220, 220, 220);
   font-family: Roboto, sans-serif;
   font-size: 16px;
   box-sizing: border-box;
@@ -18,6 +19,7 @@
 
 body {
   margin: 0;
+  width: 100%;
   font-size: inherit;
   background-color: var(--main-color);
 }
@@ -48,14 +50,16 @@ img {
   padding: 1.5em 1em;
 }
 
-header .container {
+header .container,
+footer .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.header__logo {
+.header__logo,
+.footer__logo {
   flex: 0 0 8em;
   cursor: pointer;
 }
@@ -64,6 +68,7 @@ header .container {
   height: 20em;
   background: url("./image/Assets/Hero-Image-Small.jpg") no-repeat center;
   background-size: cover;
+  margin-bottom: 1em;
 }
 
 .container h1 {
@@ -146,6 +151,7 @@ header .container {
 .search__form{
   display: flex;
   flex-flow: column;
+  position: relative;
 }
 
 .search__form > * + *{
@@ -161,6 +167,40 @@ header .container {
   font-size: 1em;
 }
 
+.search__icon {
+  position: absolute;
+  top: 2.1em;
+  left: 1em;
+}
+
 section.container {
   padding-top: 0;
+}
+
+.camps-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.card {
+  padding: 1em;
+  border: 1px solid var(--border-color);
+  border-radius: .3em;
+}
+
+.light-btn {
+  color: var(--btn-background-color);
+  background-color: var(--main-color);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  transition: background-color .2s linear;
+  font-size: 1em;
+  font-weight: 700;
+  width: 100%;
+  border-radius: .3em;
+}
+
+.light-btn:hover {
+  background-color: var(--darken-main-color);
 }
